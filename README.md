@@ -1,7 +1,7 @@
 # drug-discovery-gnns
 personal project on KG learning for drug discovery
 
-<a target="_blank" href="https://colab.research.google.com/github/mylonasc/drug-discovery-gnns/tree/main/dev/Drug_discovery_1.ipynb">
+<a target="_blank" href="https://colab.research.google.com/github/mylonasc/drug-discovery-gnns/blob/main/dev/Drug_discovery_1.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
