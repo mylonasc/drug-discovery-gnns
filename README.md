@@ -12,7 +12,15 @@ personal project on KG learning for drug discovery
 * Code for cleaning up / preproc of DrugBank (in development stage - needs cleanup)
 * Sampler for drug/target neighborhoods
 * Write an efficient sampler/negative sampler for graph tuples [TODO]
-* Train [TODO]
+* Train [done - first results]
 * Validate [TODO]
 
+## First results
+
+### Drug-protein interaction prediction
+In what follows, `ProtT5` embeddings are used for the proteins and random initialization for drugs. A custom GraphSage-like sampler (with negative examples for the edges) was implemented; The depth of the neighborhood is 2. The negative samples are found by taking a simple "derangement" of the source nodes (both drugs and proteins). 
+
+As a first example, and to show that the code works, a link prediction model was trained.
+
+![alt text](assets/edge_class.png?raw=true)
 
