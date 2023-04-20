@@ -1,24 +1,26 @@
 # drug-discovery-gnns
-personal project on KG learning for drug discovery
+personal project on KG learning for drug discovery (work in progress)
 
 <a target="_blank" href="https://colab.research.google.com/github/mylonasc/drug-discovery-gnns/blob/main/dev/Drug_discovery_1.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-
+See the notebook in `dev` for more info. 
 
 ## Open in colab [WIP]
-* Compute embeddings with ProtT5 (up to 4.5k residues due to colab limitations)
-* Code for cleaning up / preproc of DrugBank (in development stage - needs cleanup)
-* Sampler for drug/target neighborhoods
-* Write an efficient sampler/negative sampler for graph tuples
-* Train 
-* Write a simple explanation of loss functions and training procedure.
-* Validate [TODO]
+* Compute embeddings with ProtT5 (up to 4.5k residues due to colab limitations) - **currently un-usued.**
+* Code for cleaning up / preproc of DrugBank (done)
+* Sampler for drug/target neighborhoods (done)
+* Write an efficient sampler/negative sampler for graph tuples (done)
+* Train  (done)
+* Write a simple explanation of loss functions and training procedure (done).
+* Validate
+  * qualitative first validation (done) 
+  * Quantitative/inductive inference validation [TODO]
 
 ## Pre-processing, loss function and training
 
-Several loss functions are to be implemented. At the moment, an edge-prediction (drug-target interaction) task has been successfully trained. It is a *transductive* task - i.e., it returns embeddings only for drugs and proteins already seen in the graph, but it will be extended to an inductive one.
+Several loss functions are to be implemented. At the moment, an edge-prediction (drug-target interaction) task has been successfully used for training. It is a *transductive* task - i.e., it returns embeddings only for drugs and proteins already seen in the graph, but it will be extended to an inductive one.
 
 Outline of modeling and negative sampling approach:
 ### 
@@ -38,13 +40,5 @@ In the following figure the derangement-based negative edge sampling strategy an
 
 
 ## First results
-
-### Drug-protein interaction prediction
-In what follows, `ProtT5` embeddings are used for the proteins and random initialization for drugs. A custom GraphSage-like sampler (with negative examples for the edges) was implemented; The depth of the neighborhood is 2. The negative samples are found by taking a simple "derangement" of the source nodes (both drugs and proteins). 
-
-As a first example, and to show that the code works, a link prediction model was trained.
-
-![alt text](assets/edge_class.png?raw=true)
-
-
+See bottom of included notebook.
 
