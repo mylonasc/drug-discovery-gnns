@@ -1,5 +1,4 @@
 # drug-discovery-gnns
-personal project on KG learning for drug discovery
 =======
 personal project on KG learning for drug discovery (work in progress)
 

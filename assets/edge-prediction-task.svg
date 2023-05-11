@@ -15,10 +15,14 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+<<<<<<< HEAD
    sodipodi:docname="edge-prediction-task.svg"
    inkscape:export-filename="/home/charilaos/Workspace/drug-discovery-gnns/assets/edge-prediction-task.png"
    inkscape:export-xdpi="200"
    inkscape:export-ydpi="200">
+=======
+   sodipodi:docname="edge-prediction-task.svg">
+>>>>>>> bba56f2c3636e457b40bf21a470bceb8dce494f6
   <defs
      id="defs2">
     <marker
