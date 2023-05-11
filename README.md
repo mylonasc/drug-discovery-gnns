@@ -1,5 +1,4 @@
 # drug-discovery-gnns
-=======
 personal project on KG learning for drug discovery (work in progress)
 
 <a target="_blank" href="https://colab.research.google.com/github/mylonasc/drug-discovery-gnns/blob/main/dev/Drug_discovery_1.ipynb">
